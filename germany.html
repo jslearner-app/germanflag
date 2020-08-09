@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing Germany Flag with HTML CSS</title>
+  </head>
+  <style>
+    .flag {
+      width: 80vw;
+      height: 180vh;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      margin: 30px;
+    }
+    .div-child {
+      width: 80vw;
+      height: 60vh;
+    }
+    #black {
+      background: black;
+    }
+    #red {
+      background: yellow;
+    }
+    #yellow {
+      background: red;
+    }
+    .circle {
+      height: 20vw;
+      width: 20vw;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-y: hidden;
+    }
+
+    .circle-img {
+      height: 20vw;
+      width: 20vw;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media only screen and (max-width: 992px) {
+      .circle-img {
+        background: url(belgmap1.png);
+        background-repeat: no-repeat;
+        background-size: 20vw;
+        overflow: hidden;
+      }
+    }
+    @media only screen and (min-width: 1000px) {
+      .circle-img {
+        background: url(belgmap1.png);
+        background-repeat: no-repeat;
+        background-size: 20vw;
+        overflow: hidden;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .circle-img {
+        background: url(belgmap1.png);
+        background-repeat: no-repeat;
+        background-size: 20vw;
+        overflow: hidden;
+      }
+    }
+    /*Changing from Germany Flag to Belgium Flag*/
+
+    @media only screen and (max-width: 700px) {
+      .circle {
+        background: url(cup.jpg);
+        background-repeat: no-repeat;
+        background-size: 20vw;
+        overflow-y: hidden;
+      }
+
+      .flag {
+        width: 120vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+
+      /*.div-child {
+        width: 25vw;
+        height: vw;
+      }*/
+
+      #black {
+        background: black;
+      }
+      #red {
+        background: red;
+      }
+      #yellow {
+        background: yellow;
+      }
+    }
+  </style>
+  <body>
+    <div class="flag">
+      <div class="div-child" id="black"></div>
+      <div class="div-child" id="red"></div>
+      <div class="div-child" id="yellow"></div>
+
+      <div class="circle"></div>
+
+      <div class="circle-img"></div>
+    </div>
+  </body>
+</html>
