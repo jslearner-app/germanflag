@@ -52,10 +52,29 @@
     }
     @media only screen and (max-width: 992px) {
       .circle-img {
-        background: url(belgmap1.png);
+        background: url(cup.jpg);
         background-repeat: no-repeat;
         background-size: 20vw;
         overflow: hidden;
+      }
+      .flag {
+        width: 120vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+      #black {
+        background: black;
+      }
+      #red {
+        background: red;
+      }
+      #yellow {
+        background: yellow;
       }
     }
     @media only screen and (min-width: 1000px) {
@@ -82,7 +101,6 @@
         background: url(cup.jpg);
         background-repeat: no-repeat;
         background-size: 20vw;
-        overflow-y: hidden;
       }
 
       .flag {
